@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Class-Path: . mysql-connector-java-5.1.32.jar rapid-generator-3.9.2.20
+ 100720-source.jar h2-1.2.137.jar freemarker.jar mysql-connector-java-
+ 5.0.5-bin.jar rapid-generator.jar ojdbc14.jar sqljdbc.jar postgresql-
+ 8.4-701.jdbc3.jar
+Main-Class: com.fkframe.codegener.ui.ExamServer
+

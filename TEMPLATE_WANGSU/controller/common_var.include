@@ -1,0 +1,6 @@
+<#assign className = tableClazz.className>
+<#assign classNameLower = tableClazz.className?uncap_first>
+<#assign subClazzes = tableClazz.subClazzes>
+<#assign entityCnName = tableClazz.tableAlias>
+
+<#macro jspEl value>${r"${"}${value}}</#macro>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>
+		代码生成器配置文件: 
+		1.会为所有的property生成property_dir属性,如pkg=com.company => pkg_dir=com/company
+		2.可以引用环境变量: ${env.JAVA_HOME} or System.properties: ${user.home},property之间也可以相互引用
+	</comment>
+	
+	<entry key="basepackage">demo</entry>
+	<entry key="outRoot">D:\generator-output</entry>
+
+    <!-- oracle需要指定jdbc.schema,其它数据库忽略此项配置-->
+	<!--<entry key="jdbc.schema">QTMS</entry>
+	<entry key="jdbc.catalog"></entry>
+	<entry key="jdbc.username">qtms</entry>
+	<entry key="jdbc.password">qtms123</entry>
+	<entry key="jdbc.url">jdbc:oracle:thin:@10.188.180.221:1521:orcl</entry>
+	<entry key="jdbc.driver">oracle.jdbc.driver.OracleDriver</entry>-->
+
+    <!-- mysql -->
+    <!--<entry key="jdbc.url">jdbc:mysql://36.250.248.249:9527/cbss1.2?useUnicode=true&amp;characterEncoding=UTF-8</entry>-->
+	<entry key="jdbc.url">jdbc:mysql://localhost:3306/glass?useUnicode=true&amp;characterEncoding=UTF-8</entry>
+	<entry key="jdbc.driver">com.mysql.jdbc.Driver</entry>
+    <entry key="jdbc.username">root</entry>
+    <entry key="jdbc.password">CentOS@6.6</entry>
+
+	<!-- 数据库类型映射  -->
+	<!-- 需要移除的表名前缀,使用逗号进行分隔多个前缀,示例值: t_,v_ -->
+	<entry key="tableRemovePrefixes">_T,_t</entry>
+	<entry key="java_typemapping.java.sql.Timestamp">Date</entry>
+	<entry key="java_typemapping.java.sql.Date">Date</entry>
+	<entry key="java_typemapping.java.sql.Time">Date</entry>	
+	<entry key="java_typemapping.java.lang.Byte">Integer</entry>
+	<entry key="java_typemapping.java.lang.Short">Integer</entry>
+	<entry key="java_typemapping.java.lang.Integer">Integer</entry>
+    <entry key="java_typemapping.java.lang.Long">Long</entry>
+
+    <entry key="java_typemapping.java.lang.String">String</entry>
+	<entry key="java_typemapping.java.math.BigDecimal">BigDecimal</entry>	
+	<entry key="java_typemapping.java.lang.Boolean">Boolean</entry>
+	<!-- 数据库映射END -->
+</properties>
